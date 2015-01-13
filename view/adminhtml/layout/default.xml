@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Atwix_RecentCustomers::css/recent-customers.css"/>
+        <link src="Atwix_RecentCustomers::js/bootstrap.js"/>
+    </head>
+    <body>
+        <referenceContainer name="notifications">
+            <block class="Atwix\RecentCustomers\Block\Notifications" name="customer_notifications"
+                   as="customer_notifications" after="-" template="Atwix_RecentCustomers::notifications.phtml"/>
+        </referenceContainer>
+    </body>
+</page>
